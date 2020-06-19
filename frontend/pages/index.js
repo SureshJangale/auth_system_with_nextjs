@@ -85,15 +85,15 @@ const Index = () => {
                       ')'
                   }}
                 >
-                  <h2 className="text-shadow text-center h1">Want To Do Signout?</h2>
+                  <h2 className="text-shadow text-center h1">Want To Explore?</h2>
                 </div>
                 <div className="back text-center">
-                  <Link href="/signout">
+                  <Link href="/">
                     <a>
-                      <h3 className="h1">SIGNOUT</h3>
+                      <h3 className="h1">EXPLORE</h3>
                     </a>
                   </Link>
-                  <p className="lead">Do you really want to signout......?</p>
+                  <p className="lead">Explore the great......</p>
                 </div>
               </div>
             </div>
