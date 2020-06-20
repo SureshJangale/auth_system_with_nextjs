@@ -28,7 +28,7 @@ exports.preSignup = (req, res) => {
             <p>${process.env.CLIENT_URL}/auth/account/activate/${token}</p>
             <hr />
             <p>This email may contain sensetive information</p>
-            <p>https://seoblog.com</p>
+            <p>https://authenticationsystem.com</p>
         `
         };
 
@@ -39,36 +39,6 @@ exports.preSignup = (req, res) => {
         });
     });
 };
-
-// exports.signup = (req, res) => {
-//     // console.log(req.body);
-//     User.findOne({ email: req.body.email }).exec((err, user) => {
-//         if (user) {
-//             return res.status(400).json({
-//                 error: 'Email is taken'
-//             });
-//         }
-
-//         const { name, email, password } = req.body;
-//         let username = shortId.generate();
-//         let profile = `${process.env.CLIENT_URL}/profile/${username}`;
-
-//         let newUser = new User({ name, email, password, profile, username });
-//         newUser.save((err, success) => {
-//             if (err) {
-//                 return res.status(400).json({
-//                     error: err
-//                 });
-//             }
-//             // res.json({
-//             //     user: success
-//             // });
-//             res.json({
-//                 message: 'Signup success! Please signin.'
-//             });
-//         });
-//     });
-// };
 
 exports.signup = (req, res) => {
     const token = req.body.token;
@@ -198,7 +168,7 @@ exports.forgotPassword = (req, res) => {
             <p>${process.env.CLIENT_URL}/auth/password/reset/${token}</p>
             <hr />
             <p>This email may contain sensetive information</p>
-            <p>https://seoblog.com</p>
+            <p>https://authenticationsystem.com</p>
         `
         };
         // populating the db > user > resetPasswordLink
